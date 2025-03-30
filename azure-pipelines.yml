@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: Yarin
 
 steps:
 - script: echo Hello, world!
