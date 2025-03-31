@@ -21,7 +21,7 @@ steps:
     templateLocation: 'Linked artifact'
     csmFile: 'storageAccount.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'Create StorageAccount'
+    deploymentName: 'CreateStorageAccount'
 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
@@ -34,4 +34,4 @@ steps:
     templateLocation: 'Linked artifact'
     csmFile: 'linuxVM.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'Create VM'
+    deploymentName: 'CreateVM'
