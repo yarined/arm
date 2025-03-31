@@ -10,13 +10,6 @@ pool:
   name: Default
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -29,3 +22,16 @@ steps:
     csmFile: 'storageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'Create StorageAccount'
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(b60b97f4-3bd0-4618-b436-c337986be64c)'
+    subscriptionId: 'b60b97f4-3bd0-4618-b436-c337986be64c'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'arm'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'linuxVM.json'
+    deploymentMode: 'Incremental'
+    deploymentName: 'Create VM'
