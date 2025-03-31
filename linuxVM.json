@@ -12,7 +12,7 @@
         },
         "adminUsername": {
             "type": "string",
-            "defaultValue": "admin"
+            "defaultValue": "yarin"
         }
     },
     "resources": [
@@ -72,6 +72,11 @@
             "apiVersion": "2021-05-01",
             "name": "[concat(parameters('vmName'), '-nic')]",
             "location": "[parameters('location')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', concat(parameters('vmName'), '-vnet'))]",
+                "[resourceId('Microsoft.Network/publicIPAddresses', concat(parameters('vmName'), '-pip'))]",
+                "[resourceId('Microsoft.Network/networkSecurityGroups', concat(parameters('vmName'), '-nsg'))]"
+            ],
             "properties": {
                 "ipConfigurations": [
                     {
@@ -96,6 +101,9 @@
             "apiVersion": "2022-11-01",
             "name": "[parameters('vmName')]",
             "location": "[parameters('location')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/networkInterfaces', concat(parameters('vmName'), '-nic'))]"
+            ],
             "properties": {
                 "hardwareProfile": {
                     "vmSize": "Standard_B1s"
@@ -109,7 +117,7 @@
                             "publicKeys": [
                                 {
                                     "path": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
-                                    "keyData": "[reference(resourceId('Microsoft.Compute/sshPublicKeys', 'yarin')).publicKey]"
+                                    "keyData": "[reference(resourceId('Microsoft.Compute/sshPublicKeys', 'yarin'), '2022-11-01').publicKey]"
                                 }
                             ]
                         }

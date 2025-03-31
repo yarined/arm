@@ -5,7 +5,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2021-09-01",
-            "name": "yarinStorageAccountA",
+            "name": "yarinstorageaccounta",
             "location": "eastus",
             "sku": {
                 "name": "Standard_LRS"
@@ -15,7 +15,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2021-09-01",
-            "name": "yarinStorageAccountB",
+            "name": "yarinstorageaccountb",
             "location": "eastus",
             "sku": {
                 "name": "Standard_LRS"
@@ -26,11 +26,11 @@
     "outputs": {
         "storageAccountAId": {
             "type": "string",
-            "value": "[resourceId('Microsoft.Storage/storageAccounts', 'yarinStorageAccountA')]"
+            "value": "[resourceId('Microsoft.Storage/storageAccounts', 'yarinstorageaccounta')]"
         },
         "storageAccountBId": {
             "type": "string",
-            "value": "[resourceId('Microsoft.Storage/storageAccounts', 'yarinStorageAccountB')]"
+            "value": "[resourceId('Microsoft.Storage/storageAccounts', 'yarinstorageaccountb')]"
         }
     }
 }
