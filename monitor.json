@@ -1,0 +1,330 @@
+{
+  "properties": {
+    "lenses": [
+      {
+        "order": 0,
+        "parts": [
+          {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccounta"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccounta"
+                          },
+                          "name": "Egress",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Egress"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccounta"
+                          },
+                          "name": "Ingress",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Ingress"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccounta"
+                          },
+                          "name": "SuccessE2ELatency",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.storage/storageaccounts/blobservices",
+                          "metricVisualization": {
+                            "displayName": "Success E2E Latency"
+                          }
+                        }
+                      ],
+                      "title": "StorageAccountA Metrics",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideHoverCard": false,
+                          "hideLabelNames": true
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 6,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccountb"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Storage/storageAccounts/yarinstorageaccountb"
+                          },
+                          "name": "Ingress",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts",
+                          "metricVisualization": {
+                            "displayName": "Ingress"
+                          }
+                        }
+                      ],
+                      "title": "StorageAccountB Metrics",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideHoverCard": false,
+                          "hideLabelNames": true
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 12,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Compute/virtualMachines/instance"
+                          },
+                          "name": "Percentage CPU",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Percentage CPU",
+                            "resourceDisplayName": "instance"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Compute/virtualMachines/instance"
+                          },
+                          "name": "Available Memory Percentage",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Available Memory Percentage (Preview)",
+                            "resourceDisplayName": "instance"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Compute/virtualMachines/instance"
+                          },
+                          "name": "Disk Read Operations/Sec",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Disk Read Operations/Sec",
+                            "resourceDisplayName": "instance"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/b60b97f4-3bd0-4618-b436-c337986be64c/resourceGroups/arm/providers/Microsoft.Compute/virtualMachines/instance"
+                          },
+                          "name": "Disk Write Operations/Sec",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Disk Write Operations/Sec",
+                            "resourceDisplayName": "instance"
+                          }
+                        }
+                      ],
+                      "title": "Virtual Machine Metrics",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideHoverCard": false,
+                          "hideLabelNames": true
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "absolute": {
+                  "fromDate": "2025-03-30T21:41:48.158Z",
+                  "toDate": "2025-03-31T14:14:46.784Z"
+                }
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "3/30/2025 to 3/31/2025"
+              },
+              "filteredPartIds": [
+                "StartboardPart-MonitorChartPart-e59cfa70-65d8-4fd9-adc5-a0cd37227755",
+                "StartboardPart-MonitorChartPart-e59cfa70-65d8-4fd9-adc5-a0cd37227749",
+                "StartboardPart-MonitorChartPart-1187dab4-ec36-4838-9bf7-a73865aedf9c"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "Monitor",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "Monitor"
+  },
+  "apiVersion": "2022-12-01-preview"
+}
