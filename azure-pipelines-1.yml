@@ -15,6 +15,7 @@ steps:
     sshEndpoint: 'intanceAgent'
     runOptions: 'inline'
     inline: |
+    
       chmod +x ~/blob_migration.sh
       ./blob_migration.sh
     readyTimeout: '20000'
