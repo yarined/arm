@@ -15,6 +15,7 @@ steps:
     sshEndpoint: 'intanceAgent'
     runOptions: 'inline'
     inline: |
-      ls -la
+      git clone https://github.com/yarined/arm.git
+      cd arm
       sh blob_migration.sh
     readyTimeout: '20000'
