@@ -10,8 +10,11 @@ pool:
   vmImage: VMhost
 
 steps:
-
-- script: |
-      chmod +x blob_migration.sh
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'intanceAgent'
+    runOptions: 'inline'
+    inline: |
+      chmod +x ~/blob_migration.sh
       ./blob_migration.sh
-  displayName: "Run Bash Script"
+    readyTimeout: '20000'
