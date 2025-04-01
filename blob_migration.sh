@@ -19,6 +19,7 @@ az storage container create --name $sourceContainerName --account-name $sourceAc
 for i in $(seq 1 100)
 do
     echo "Blob content $i" > "blob_$i.txt"
+    # There is an option to overwrite if the file already exists (--overwrite)
     az storage blob upload --container-name $sourceContainerName --file "blob_$i.txt" --name "blob_$i.txt" --account-name $sourceAccountName --account-key $sourceKey
     rm "blob_$i.txt"
 done

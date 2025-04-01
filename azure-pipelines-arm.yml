@@ -3,9 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+# I want to build the ARM template manually.
 trigger:
-- main
+- none
 
+# Created selfhost and called him Default
 pool:
   name: Default
 
