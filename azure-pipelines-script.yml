@@ -6,13 +6,14 @@
 trigger:
 - main
 
-# Created selfhost and called him Default
+# Created selfhost and called him Default.
 pool:
   name: Default
 
 steps:
 - task: SSH@0
   inputs:
+    # Create ssh connection for the VM.
     sshEndpoint: 'intanceAgent'
     runOptions: 'inline'
     inline: |
