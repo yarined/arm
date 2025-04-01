@@ -6,9 +6,8 @@
 trigger:
 - main
 
-# Created selfhost and called him Default.
 pool:
-  name: Default
+  vmImage: ubuntu-latest
 
 steps:
 - task: SSH@0
