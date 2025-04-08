@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: VMhost
+  name: Default
 
 steps:
 - task: SSH@0
